@@ -1,54 +1,55 @@
-# 🔐 Gerador de Senhas Seguras
+# Gerador de Senhas Seguras
 
-Um gerador de senhas aleatórias e seguras via linha de comando (CLI), feito em Node.js + TypeScript.
+Este projeto é um gerador de senhas aleatórias e seguras, permitindo que os usuários criem senhas personalizadas de acordo com suas necessidades.
 
 ## Funcionalidades
 
-- Definir o tamanho da senha
-- Incluir letras maiúsculas, minúsculas, números e símbolos
-- Botão para copiar a senha gerada para a área de transferência
-- Interface simples e interativa no terminal
+- **Definir tamanho da senha**: O usuário pode especificar o comprimento da senha desejada.
+- **Incluir letras maiúsculas, minúsculas, números e símbolos**: O gerador pode criar senhas que atendem a diferentes requisitos de segurança.
+- **Copiar a senha gerada**: O usuário pode facilmente copiar a senha gerada para a área de transferência.
+- **Interface simples**: O projeto oferece uma interface de linha de comando (CLI) para interação fácil.
 
-## Como usar
+## Estrutura do Projeto
 
-1. **Clone o repositório:**
-   ```sh
-   git clone https://github.com/seu-usuario/gerador-de-senhas-seguras.git
+```
+gerador-de-senhas-seguras
+├── src
+│   ├── app.ts          # Ponto de entrada da aplicação
+│   ├── cli.ts          # Implementação da interface de linha de comando
+│   ├── utils
+│   │   └── passwordGenerator.ts  # Função para gerar senhas aleatórias
+│   └── types
+│       └── index.ts    # Definições de tipos utilizados no projeto
+├── package.json         # Configuração do npm
+├── tsconfig.json        # Configuração do TypeScript
+└── README.md            # Documentação do projeto
+```
+
+## Instalação
+
+1. Clone o repositório:
+   ```
+   git clone <URL_DO_REPOSITORIO>
+   ```
+2. Navegue até o diretório do projeto:
+   ```
    cd gerador-de-senhas-seguras
    ```
-
-2. **Instale as dependências:**
-   ```sh
+3. Instale as dependências:
+   ```
    npm install
    ```
 
-3. **Execute o gerador:**
-   ```sh
-   npx ts-node src/cli.ts
-   ```
+## Uso
 
-4. **Siga as instruções no terminal para gerar sua senha.**
-
-## Exemplo de uso
+Para executar o gerador de senhas, utilize o seguinte comando na linha de comando:
 
 ```
-🔐 Gerador de Senhas Seguras
-Tamanho da senha: 12
-Incluir letras maiúsculas? (s/n): s
-Incluir letras minúsculas? (s/n): s
-Incluir números? (s/n): s
-Incluir símbolos? (s/n): n
-Senha gerada: XyT8kLmPqRzS
-Copiar senha para a área de transferência? (s/n): s
-Senha copiada!
+node dist/cli.js
 ```
 
-## Tecnologias
+Siga as instruções na tela para definir o tamanho da senha e gerar uma nova senha segura.
 
-- Node.js
-- TypeScript
-- [clipboardy](https://www.npmjs.com/package/clipboardy)
+## Contribuição
 
-## Licença
-
-Este projeto está sob a licença MIT.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
