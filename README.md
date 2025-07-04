@@ -1,55 +1,95 @@
-# Gerador de Senhas Seguras
+## Gerador de Senhas Seguras
 
-Este projeto é um gerador de senhas aleatórias e seguras, permitindo que os usuários criem senhas personalizadas de acordo com suas necessidades.
+Este projeto é uma aplicação de linha de comando que gera senhas aleatórias com base nas preferências do usuário.
+Ideal para criar senhas fortes e seguras com letras, números e símbolos.
+
+Desenvolvido com **TypeScript**, o projeto é organizado em módulos reutilizáveis e de fácil manutenção.
+
+---
 
 ## Funcionalidades
 
-- **Definir tamanho da senha**: O usuário pode especificar o comprimento da senha desejada.
-- **Incluir letras maiúsculas, minúsculas, números e símbolos**: O gerador pode criar senhas que atendem a diferentes requisitos de segurança.
-- **Copiar a senha gerada**: O usuário pode facilmente copiar a senha gerada para a área de transferência.
-- **Interface simples**: O projeto oferece uma interface de linha de comando (CLI) para interação fácil.
+* Definir o tamanho da senha
+* Incluir letras maiúsculas e minúsculas
+* Incluir números e símbolos
+* Geração instantânea de senha aleatória
+* Copiar a senha gerada
+* Interface via CLI simples e objetiva
+
+---
 
 ## Estrutura do Projeto
 
 ```
-gerador-de-senhas-seguras
-├── src
-│   ├── app.ts          # Ponto de entrada da aplicação
-│   ├── cli.ts          # Implementação da interface de linha de comando
-│   ├── utils
-│   │   └── passwordGenerator.ts  # Função para gerar senhas aleatórias
-│   └── types
-│       └── index.ts    # Definições de tipos utilizados no projeto
-├── package.json         # Configuração do npm
-├── tsconfig.json        # Configuração do TypeScript
-└── README.md            # Documentação do projeto
+gerador-de-senhas-seguras/
+├── src/
+│   ├── app.ts                   # Arquivo principal
+│   ├── cli.ts                   # Interface de linha de comando
+│   ├── utils/
+│   │   └── passwordGenerator.ts # Lógica de geração de senhas
+│   └── types/
+│       └── index.ts             # Tipagens do projeto
+├── package.json                 # Dependências e scripts
+├── tsconfig.json                # Configuração do TypeScript
+└── README.md                    # Documentação do projeto
 ```
 
-## Instalação
+---
 
-1. Clone o repositório:
-   ```
-   git clone <URL_DO_REPOSITORIO>
-   ```
-2. Navegue até o diretório do projeto:
-   ```
-   cd gerador-de-senhas-seguras
-   ```
-3. Instale as dependências:
-   ```
-   npm install
-   ```
+## Como Executar
 
-## Uso
+> Requisitos: Node.js e TypeScript instalados
 
-Para executar o gerador de senhas, utilize o seguinte comando na linha de comando:
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/gerador-de-senhas-seguras.git
 
-```
+# Acesse a pasta do projeto
+cd gerador-de-senhas-seguras
+
+# Instale as dependências
+npm install
+
+# Compile o TypeScript
+npx tsc
+
+# Execute a aplicação
 node dist/cli.js
 ```
 
-Siga as instruções na tela para definir o tamanho da senha e gerar uma nova senha segura.
+A aplicação exibirá instruções no terminal para que você defina as opções e gere sua senha segura.
+
+## Demonstração (Simulada)
+
+``` 📂 Projeto iniciado...
+
+? Qual o comprimento da senha? 16  
+? Incluir letras maiúsculas? (Y/N) y  
+? Incluir letras minúsculas? (Y/N) y  
+? Incluir números? (Y/N) y  
+? Incluir símbolos? (Y/N) y  
+
+🔐 Senha gerada: Gx#9Kw@dR2eT6$Vm
+```
+
+---
+
+## Tecnologias Utilizadas
+
+* Node.js
+* TypeScript
+* CLI (Command Line Interface)
+* Módulos ES + boas práticas de projeto
+
+---
 
 ## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
+Contribuições são bem-vindas!
+Você pode:
+
+1. Fazer um fork do repositório
+2. Criar uma branch com suas alterações
+3. Abrir um Pull Request com sua sugestão ou melhoria
+
+---
