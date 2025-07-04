@@ -61,7 +61,8 @@ A aplicação exibirá instruções no terminal para que você defina as opçõe
 
 ## Demonstração (Simulada)
 
-``` 📂 Projeto iniciado...
+```
+📂 Projeto iniciado...
 
 ? Qual o comprimento da senha? 16  
 ? Incluir letras maiúsculas? (Y/N) y  
