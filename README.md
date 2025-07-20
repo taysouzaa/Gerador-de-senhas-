@@ -33,7 +33,19 @@ Desenvolvido com *TypeScript*, o projeto é organizado em módulos reutilizávei
 
 ## 🧩 Estrutura do Projeto
 
-gerador-de-senhas-seguras/ ├── src/ │   ├── app.ts                   # Arquivo principal │   ├── cli.ts                   # Interface de linha de comando │   ├── utils/ │   │   └── passwordGenerator.ts # Lógica de geração de senhas │   └── types/ │       └── index.ts             # Tipagens do projeto ├── package.json                 # Dependências e scripts ├── tsconfig.json                # Configuração do TypeScript └── README.md                    # Documentação do projeto
+```
+gerador-de-senhas-seguras/
+├── src/
+│   ├── app.ts                   # Arquivo principal
+│   ├── cli.ts                   # Interface de linha de comando
+│   ├── utils/
+│   │   └── passwordGenerator.ts # Lógica de geração de senhas
+│   └── types/
+│       └── index.ts             # Tipagens do projeto
+├── package.json                 # Dependências e scripts
+├── tsconfig.json                # Configuração do TypeScript
+└── README.md                    # Documentação do projeto
+```
 
 ---
 
