@@ -1,132 +1,64 @@
-# 🔐 GERADOR DE SENHAS SEGURAS
+# Gerador de Senhas Seguras
 
-Gere senhas fortes e personalizadas diretamente do terminal
+> Gere senhas fortes e personalizadas diretamente do terminal, com critérios configuráveis e indicador de força.
 
-[![last commit](https://img.shields.io/github/last-commit/seu-usuario/gerador-de-senhas-seguras)](https://github.com/seu-usuario/gerador-de-senhas-seguras)
-[![TypeScript](https://img.shields.io/badge/built_with-TypeScript-3178c6?logo=typescript)]()
-[![CLI](https://img.shields.io/badge/interface-CLI-blue)]()
+![Status](https://img.shields.io/badge/status-concluído-22c55e)
+![TypeScript](https://img.shields.io/badge/TypeScript-CLI-3178c6?logo=typescript)
+![Node](https://img.shields.io/badge/runtime-Node.js-339933?logo=nodedotjs)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Construído com foco em segurança, performance e simplicidade.
+## Visão do Projeto
 
----
+O **Gerador de Senhas Seguras** é uma ferramenta de linha de comando (CLI) escrita em TypeScript que cria senhas aleatórias com base em critérios configurados pelo usuário. Construído com foco em segurança, performance e simplicidade de uso.
 
-## 📌 Visão Geral
+### O que o sistema resolve
 
-O *Gerador de Senhas Seguras* é uma aplicação de linha de comando que gera senhas aleatórias com base nas preferências do usuário.
+- Gera senhas verdadeiramente aleatórias com entropia controlada.
+- Permite customizar comprimento, caracteres especiais, números e maiúsculas.
+- Indica visualmente a força da senha gerada.
+- Copia automaticamente a senha para a área de transferência.
 
-Ideal para criar senhas fortes e seguras com letras, números e símbolos — tudo de forma rápida e prática via terminal.
+## O Que Foi Desenvolvido
 
-Desenvolvido com *TypeScript*, o projeto é organizado em módulos reutilizáveis e de fácil manutenção.
+### 1. Geração de Senhas
+- Algoritmo de aleatoriedade com critérios configuráveis.
+- Suporte a letras maiúsculas, minúsculas, números e símbolos.
+- Comprimento ajustável pelo usuário.
 
----
+### 2. Interface CLI
+- Prompts interativos para configuração rápida.
+- Indicador de força da senha (fraca / média / forte / muito forte).
+- Cópia automática para área de transferência.
 
-## ✨ Funcionalidades
+### 3. Qualidade de Código
+- TypeScript estrito com tipagem completa.
+- Módulos separados por responsabilidade.
 
-- 🔢 Definir o tamanho da senha  
-- 🔠 Incluir letras maiúsculas e minúsculas  
-- 🔣 Incluir números e símbolos  
-- ⚡ Geração instantânea da senha  
-- 📋 Copiar a senha gerada (opcional)  
-- 💻 Interface via CLI simples e objetiva  
+## Stack Técnica
 
----
+- **Linguagem:** TypeScript
+- **Runtime:** Node.js
+- **Interface:** CLI interativa
 
-## 🧩 Estrutura do Projeto
+## Estrutura do Projeto
 
+```text
+.
+├─ index.ts              ← entrypoint principal
+├─ cli.ts                ← interface de linha de comando
+├─ app.ts                ← lógica da aplicação
+├─ passwordGenerator.ts  ← algoritmo de geração de senha
+├─ package.json
+└─ tsconfig.json
 ```
-gerador-de-senhas-seguras/
-├── src/
-│   ├── app.ts                   # Arquivo principal
-│   ├── cli.ts                   # Interface de linha de comando
-│   ├── utils/
-│   │   └── passwordGenerator.ts # Lógica de geração de senhas
-│   └── types/
-│       └── index.ts             # Tipagens do projeto
-├── package.json                 # Dependências e scripts
-├── tsconfig.json                # Configuração do TypeScript
-└── README.md                    # Documentação do projeto
-```
 
----
+## Como Executar
 
-## ⚙ Como Executar
-
-> *Pré-requisitos:* [Node.js](https://nodejs.org/) e [TypeScript](https://www.typescriptlang.org/) instalados
-
-# Clone o repositório
-```bash
-git clone https://github.com/seu-usuario/gerador-de-senhas-seguras.git
-```
-# Acesse o diretório
-```bash
-cd gerador-de-senhas-seguras
-```
-# Instale as dependências
 ```bash
 npm install
-```
-# Compile o código TypeScript
-```bash
-npx tsc
-```
-# Execute a aplicação
-```bash
-node dist/cli.js
+npm start
 ```
 
----
+## Licença
 
-💡 Demonstração (Simulada)
-
-📂 Projeto iniciado...
-
-? Qual o comprimento da senha? 16  
-? Incluir letras maiúsculas? (Y/N) y  
-? Incluir letras minúsculas? (Y/N) y  
-? Incluir números? (Y/N) y  
-? Incluir símbolos? (Y/N) y  
-
-🔐 Senha gerada: Gx#9Kw@dR2eT6$Vm
-
-
----
-
-🛠 Tecnologias Utilizadas
-
-Node.js
-
-TypeScript
-
-CLI (Command Line Interface)
-
-Módulos ES
-
-Boas práticas de projeto
-
-
-
----
-
-🤝 Contribuição
-
-Contribuições são bem-vindas!
-Para colaborar:
-
-1. Faça um fork do repositório
-
-
-2. Crie uma branch com suas alterações
-
-
-3. Abra um Pull Request com sua sugestão ou melhoria
-
-
-
-
----
-
-📄 Licença
-
-Este projeto está licenciado sob a MIT License.
-
----
+MIT — veja [LICENSE](./LICENSE)
